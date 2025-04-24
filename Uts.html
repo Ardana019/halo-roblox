@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Template</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #5f2c82, #49a09d);
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .header-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .header-left, .header-right {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .header-left h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .header-right p {
+      margin: 0;
+      max-width: 500px;
+    }
+
+    .divider-vertical {
+      width: 2px;
+      background-color: white;
+      height: 100px;
+    }
+
+    .btn {
+      background-color: #eef0ef;
+      color: rgb(17, 17, 17);
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .features, .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .feature-text, .feature-list,
+    .contact-form, .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .feature-list ul,
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-list li::before {
+      content: '✔';
+      margin-right: 10px;
+      color: #00d084;
+    }
+
+    .divider-vertical-grey {
+      width: 2px;
+      background-color: #ccc;
+      min-height: 250px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      display: flex;
+      gap: 20px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 200px;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+    }
+
+    .card-content p {
+      margin: 0 0 10px;
+    }
+
+    .card-content .btn {
+      background: none;
+      border: 1px solid #ccc;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .contact-info li {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .contact-info li::before {
+      content: '📌 ';
+      margin-right: 5px;
+    }
+
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .center-button {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <h1>Welcome to Prism, a free responsive site template by TEMPLATED</h1>
+      </div>
+      <div class="divider-vertical"></div>
+      <div class="header-right">
+        <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Phasellus aliquam et tempus lorem dolor feugiat adipiscing lorem.</p>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Feature Section -->
+  <section>
+    <div class="features">
+      <div class="feature-text">
+        <h2>Magna feugiat adipiscing</h2>
+        <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus aliquam et tempus lorem feugiat adipiscing lorem. Morbi pharetra vitae felis placerat pharetra.</p>
+        <button class="btn">Learn More</button>
+      </div>
+
+      <div class="divider-vertical-grey"></div>
+
+      <div class="feature-list">
+        <ul>
+          <li>Ipsum nisl sed cursus magna</li>
+          <li>Amet veroeros sed aliquam consequat</li>
+          <li>Tempus lorem adipiscing et lorem</li>
+          <li>Morbi pharetra vitae felis placerat</li>
+          <li>Pharetra nulla risus orci dapibus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section>
+    <div class="cards">
+      <div class="card">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbupTEN%2FbtsAi5yB8wx%2FJUi0NEd0P9OyMkm2dUI0hk%2Fimg.webp" alt="Card 1">
+        <div class="card-content">
+          <h3>Ipsum pharetra tempus</h3>
+          <p>Lorem ipsum dolor sit amet magna et amet veroeros. Sed phasellus malesuada quis ornare.</p>
+          <button class="btn">Detail</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://brandonjadams.com/wp-content/uploads/2017/10/thinking.jpeg?w=456&h=304" alt="Card 2">
+        <div class="card-content">
+          <h3>Magna consequat felis</h3>
+          <p>Lorem ipsum dolor sit amet magna et amet veroeros. Sed phasellus malesuada quis ornare.</p>
+          <button class="btn">Detail</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://ieltspresso.com/wp-content/uploads/2025/01/pexels-pixabay-39578-1536x1020.jpg" alt="Card 3">
+        <div class="card-content">
+          <h3>Vitae placerat adipiscing</h3>
+          <p>Lorem ipsum dolor sit amet magna et amet veroeros. Sed phasellus malesuada quis ornare.</p>
+          <button class="btn">Detail</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="center-button">
+    <button class="btn">IPSUM MAGNA TEMPUS</button>
+  </div>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Orci malesuada</h2>
+        <p>Morbi pharetra vitae felis placerat pharetra. Nulla risus orci, dapibus id malesuada et nec, malesuada quis pellentesque eget.</p>
+        <form>
+          <div style="display: flex; gap: 10px;">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+          </div>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider-vertical-grey"></div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <ul>
+          <li>🐦 <a href="#">twitter.com/untitled-tld</a></li>
+          <li>📘 <a href="#">facebook.com/untitled-tld</a></li>
+          <li>📸 <a href="#">instagram.com/untitled-tld</a></li>
+          <li>📧 <a href="#">information@untitled.tld</a></li>
+          <li>📍 1234 Somewhere Road Suite 9823<br>Nashville, TN 00000-0000</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
